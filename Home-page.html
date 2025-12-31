@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="Home-page-style.css">
+  <link rel="icon" href="weather-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+</head>
+<body>
+  <nav>
+  <div class="navbar">
+    <img src="icons/weather-icon.png" width="60px" height="60px" alt="Logo">
+    <div class="search-bar">
+      </button>
+      <input type="search" placeholder="Search for location" class="search-input">
+      <button class="search-button">
+        <span class="material-symbols-outlined">
+          search</span>
+      </button>
+    </div>
+    <ul>
+      <li><a href="#mn">HOME</a></li>
+      <li><a href="http://127.0.0.1:5500/wind-map.html">MAP</a></li>
+      <li><a href="#dayf">DAILY</a></li>
+      <li><a href="http://127.0.0.1:5500/news-page.html">NEWS</a></li>
+      <div class="unit-toggle">
+        <span class="unit-label">°C</span>
+        <label class="switch">
+          <input type="checkbox" id="unitToggle">
+          <span class="slider round"></span>
+        </label>
+        <span class="unit-label">°F</span>
+      </div>
+    </ul>
+  </div>
+  </nav>
+  <div id="mn" class="main-container">
+    <div class="current-weather-container">
+      <div class="current-weather-text">Current Weather</div>
+      <div class="location"><h1>Rajpura, India</h1></div>
+      <br>
+      <div class="icon-temp">
+        <img src="https://cdn-icons-png.flaticon.com/512/3222/3222691.png" alt="Weather Icon" class="weather-icon">
+        <div class="temperature"><h2>32°C</h2></div>
+      </div>
+      <div class="weather-description"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunny</h3></div>
+      <div class="more-temp-info">
+      <div class="feels-like">Feels like: <div class="feels-like-value">10°C</div></div>
+      <div class="max-temp">Max Temp: <div class="max-temp-value">10°C</div></div>
+      <div class="min-temp">Min Temp: <div class="min-temp-value">10C</div></div>
+    </div>
+    </div>
+    <div class="info-boxes">
+      <div class="humidity">
+        <p>Humidity</p>
+        <br>
+        <img src="https://cdn-icons-png.flaticon.com/512/727/727790.png" height="50px" width="50px">
+        <p class="info-value-1">81%</p>
+      </div>
+      <div class="air-pressure">
+        <p>Air Pressure</p>
+        <br>
+        <img src="https://cdn-icons-png.flaticon.com/256/173/173568.png" height="50px" width="50px">
+        <p class="info-value-2">1013 hPa</p>
+      </div>
+      <div class="wind">
+        <p>Wind</p>
+        <br>
+        <img src="https://www.freeiconspng.com/thumbs/windy-png/windy-png-11.png" height="50px" width="50px">
+        <p class="info-value-3">3 mph</p>
+      </div>
+      <div class="uv-index">
+        <p>UV Index</p>
+        <br>
+        <img src="https://cdn-icons-png.flaticon.com/512/3262/3262975.png" height="50px" width="50px">
+        <p class="info-value-4">0</p>
+      </div>
+      <div class="sunrise">
+        <p>Sunrise</p>
+        <br>
+        <img src="https://www.svgrepo.com/show/19881/sunrise.svg" height="50px" width="50px">
+        <p class="info-value-5">5:25 am</p>
+      </div>
+      <div class="sunset">
+        <p>Sunset</p>
+        <!-- <br> -->
+        <img src="https://www.shareicon.net/download/2015/12/15/687678_down_512x512.png" height="68px" width="68px">
+        <p class="info-value-6">6:00 pm</p>
+      </div>
+      <div class="visibility">
+        <p>Visibility</p>
+        <br>
+        <img src="https://cdn-icons-png.flaticon.com/512/4264/4264841.png" height="50px" width="50px">
+        <p class="info-value-7">10km</p>
+      </div>
+      <div class="air-quality-index">
+        <p>Air Quality Index</p>
+        <br>
+        <img src="https://cdn-icons-png.flaticon.com/512/5024/5024476.png" height="50px" width="50px">
+        <p class="info-value-8">388</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div id="dayf" class="dayforecast">
+    <h1 class="forecast-title">5-Day Forecast</h1>
+    <div class="forecast-container">
+      <div class="day-card">
+        <h2>Wednesday</h2>
+        <div class="weather-icon">
+          <img src="icons/clearsky-icon.png" alt="Sunny">
+        </div>
+        <p class="temp1">25°C</p>
+        <p class="condition">Clear</p>
+      </div>
+  
+      <div class="day-card">
+        <h2>Thursday</h2>
+        <div class="weather-icon">
+          <img src="icons/haze-icon.png" alt="Cloudy">
+        </div>
+        <p class="temp2">20°C</p>
+        <p class="condition">Cloudy</p>
+      </div>
+  
+      <div class="day-card">
+        <h2>Friday</h2>
+        <div class="weather-icon">
+          <img src="icons/rainy-icon.png" alt="Rainy">
+        </div>
+        <p class="temp3">18°C</p>
+        <p class="condition">Sunny</p>
+      </div>
+  
+      <div class="day-card">
+        <h2>Saturday</h2>
+        <div class="weather-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/3222/3222691.png" alt="Stormy">
+        </div>
+        <p class="temp4">16°C</p>
+        <p class="condition">Sunny</p>
+      </div>
+  
+      <div class="day-card">
+        <h2>Sunday</h2>
+        <div class="weather-icon">
+          <img src="icons/snow-icon.png" alt="Snowy">
+        </div>
+        <p class="temp5">0°C</p>
+        <p class="condition">Clear</p>
+      </div>
+    </div>
+  </div>
+      <p class="footer-copyright" style="color: white;">© 2024 Weather Forecast App. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="Home-page-functionality.js">
+    function closeAlertBox() {
+      document.getElementById("alertBox").classList.add("hide");
+    }
+  </script>
+  <script src="5-day.js"></script>
+</body>
+
+</html>
